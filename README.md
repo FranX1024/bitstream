@@ -44,3 +44,7 @@ written value
 +--+--+
 1 0 1 1 1 0 1 1
 ```
+To turn the bitstream to a byte array type
+```cpp
+bs.toByteArray(); // returns a char* pointer (when changes are made to the bitstream using bs.write, the returned array will also change)
+```
