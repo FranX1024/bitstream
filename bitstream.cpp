@@ -45,7 +45,7 @@ public:
   // reads from bitstream
   int read(int ind, int bits) {
     int dat = 0;
-    for(int i = ind; i <= ind + bits; i++) {
+    for(int i = ind; i < ind + bits; i++) {
       dat = dat * 2 + getbit(data[i / 8], i % 8);
     }
     return dat;
