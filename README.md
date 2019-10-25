@@ -1,6 +1,6 @@
 # Bit stream library
 ## Introduction
-This library was made to make decoding / encoding base64, accessing binary files easier.
+This library was made to make things like decoding / encoding base64 and accessing binary files easier.
 ## Creating a bitstream
 New bitstream is created by typing
 ```cpp
