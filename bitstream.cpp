@@ -9,6 +9,10 @@ private:
   char *data; // where bitstream is contained
   int size;   // size of the bitstream
 public:
+  // returns data as a byte array
+  char *toByteArray() {
+    return data;
+  }
   /**************************/
   bool getbit(char x, int y) {
     return (x >> (7 - y)) & 1;
